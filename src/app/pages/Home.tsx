@@ -16,6 +16,7 @@ export function Home() {
       category: "AI Product Design",
       description: "Complete UI/UX design for an AI-powered financial platform.",
       color: "from-purple-500 to-blue-500",
+      link: "https://app.notion.com/p/Designing-User-Experiences-for-an-AI-Powered-Finance-Platform-385e4ac69ddd8084a8eddc17e5a264c1?source=copy_link",
     },
     {
       id: 2,
@@ -24,6 +25,7 @@ export function Home() {
       category: "Web & Mobile Design",
       description: "Designed furniture e-commerce website and mobile app experience.",
       color: "from-orange-500 to-pink-500",
+      link: "https://app.notion.com/p/Designing-a-Seamless-Furniture-E-Commerce-Experience-385e4ac69ddd80f1844ed9ed2fca9aea?source=copy_link",
     }
 
   ];
@@ -247,36 +249,44 @@ export function Home() {
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
                 whileHover={{ y: -10 }}
-                className="group cursor-pointer"
+                className="group"
               >
-                <div className="relative overflow-hidden rounded-2xl shadow-lg justify-items-center ">
+                <a
+                  href={project.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block"
+                  aria-label={`View ${project.title}`}
+                >
+                  <div className="relative overflow-hidden rounded-2xl shadow-lg justify-items-center ">
 
-                  {/* 1:1 Ratio */}
-                  <div className="aspect-square relative">
+                    {/* 1:1 Ratio */}
+                    <div className="aspect-square relative">
 
-                    <img
-                      src={project.image}
-                      alt={project.title}
-                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                    />
+                      <img
+                        src={project.image}
+                        alt={project.title}
+                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                      />
 
-                    {/* Gradient Overlay */}
-                    <div className={`absolute inset-0 bg-gradient-to-t ${project.color} opacity-0 group-hover:opacity-70 transition-opacity duration-300`} />
+                      {/* Gradient Overlay */}
+                      <div className={`absolute inset-0 bg-gradient-to-t ${project.color} opacity-0 group-hover:opacity-70 transition-opacity duration-300`} />
 
-                    {/* Content */}
-                    <div className="absolute bottom-0 left-0 right-0 p-6 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
-                      <div className="text-sm opacity-80 mb-1">
-                        {project.category}
+                      {/* Content */}
+                      <div className="absolute bottom-0 left-0 right-0 p-6 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                        <div className="text-sm opacity-80 mb-1">
+                          {project.category}
+                        </div>
+
+                        <h3 className="text-xl font-bold">
+                          {project.title}
+                        </h3>
                       </div>
 
-                      <h3 className="text-xl font-bold">
-                        {project.title}
-                      </h3>
                     </div>
 
                   </div>
-
-                </div>
+                </a>
               </motion.div>
             ))}
           </div>

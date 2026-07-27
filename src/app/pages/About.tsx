@@ -1,5 +1,12 @@
-import { motion } from 'motion/react';
-import { Palette, Smartphone, Package, Code, Briefcase, Award } from 'lucide-react';
+import { motion } from "motion/react";
+import {
+  Palette,
+  Smartphone,
+  Package,
+  Code,
+  Briefcase,
+  Award,
+} from "lucide-react";
 
 export function About() {
   const services = [
@@ -8,22 +15,25 @@ export function About() {
       number: "01",
       icon: <Palette className="w-6 h-6" />,
       title: "Website Design",
-      description: "I do creative design for web platforms and convert it to clean code using AI platforms."
+      description:
+        "I do creative design for web platforms and convert it to clean code using AI platforms.",
     },
     {
       id: 2,
       number: "02",
       icon: <Smartphone className="w-6 h-6" />,
       title: "Mobile App",
-      description: "I specialize in creating intuitive mobile app designs and development."
+      description:
+        "I specialize in creating intuitive mobile app designs and development.",
     },
     {
       id: 3,
       number: "03",
       icon: <Package className="w-6 h-6" />,
       title: "The Full Package",
-      description: "End-to-end design and development services for your digital projects."
-    }
+      description:
+        "End-to-end design and development services for your digital projects.",
+    },
   ];
 
   // const skills = [
@@ -46,34 +56,43 @@ export function About() {
   //     description: "I do creative design for web platforms and convert it to clean code using AI platforms."
   //   }
   // ];
-const skills = [
-  {
-    year: "May 2025 - Present",
-    category: "Future View Systems",
-    description:
-      "Working as a Software Developer (UI/UX Designer) on AI-based financial products. I design modern user interfaces, create user flows and prototypes, and convert UI designs into clean web code using AI development tools."
-  },
-  {
-    year: "Sep 2024 - May 2025",
-    category: "Zedcasa",
-    description:
-      "Worked as a UI/UX Designer for a furniture e-commerce platform. Designed user-friendly interfaces for both website and mobile app including product pages, shopping flows, and checkout experience."
-  },
-  {
-    year: "Jan 2023 - June 2023",
-    category: "Internship at Technical Hub",
-    description:
-      "Completed a UI/UX Design internship working on practice projects such as a food delivery web application and a consultancy mobile app while learning UI principles, prototyping, and graphic design."
-  }
-];
-
-
-
+  const skills = [
+    {
+      year: "May 2025 - Present",
+      category: "Future View Systems",
+      description:
+        "Working as a Software Developer (UI/UX Designer) on AI-based financial products. I design modern user interfaces, create user flows and prototypes, and convert UI designs into clean web code using AI development tools.",
+    },
+    {
+      year: "Sep 2024 - May 2025",
+      category: "Zedcasa",
+      description:
+        "Worked as a UI/UX Designer for a furniture e-commerce platform. Designed user-friendly interfaces for both website and mobile app including product pages, shopping flows, and checkout experience.",
+    },
+    {
+      year: "Jan 2023 - June 2023",
+      category: "Internship at Technical Hub",
+      description:
+        "Completed a UI/UX Design internship working on practice projects such as a food delivery web application and a consultancy mobile app while learning UI principles, prototyping, and graphic design.",
+    },
+  ];
 
   const achievements = [
-    { icon: <Briefcase className="w-8 h-8" />, number: "89+", label: "Completed Projects" },
-    { icon: <Award className="w-8 h-8" />, number: "18+", label: "Different Countries" },
-    { icon: <Code className="w-8 h-8" />, number: "5+", label: "Years Experience" }
+    {
+      icon: <Briefcase className="w-8 h-8" />,
+      number: "89+",
+      label: "Completed Projects",
+    },
+    {
+      icon: <Award className="w-8 h-8" />,
+      number: "18+",
+      label: "Different Countries",
+    },
+    {
+      icon: <Code className="w-8 h-8" />,
+      number: "5+",
+      label: "Years Experience",
+    },
   ];
 
   return (
@@ -86,43 +105,61 @@ const skills = [
             animate={{ opacity: 1, y: 0 }}
             className="text-center mb-16"
           >
-            <h1 className="text-5xl md:text-7xl font-black uppercase mb-6">About Me</h1>
+            <h1 className="text-5xl md:text-7xl font-black uppercase mb-6">
+              About Me
+            </h1>
             <p className="text-xl text-black/70 max-w-3xl mx-auto leading-relaxed">
-A passionate UI/UX designer focused on creating intuitive and engaging digital products that solve real user problems and deliver meaningful experiences.            </p>
+              A passionate UI/UX designer focused on creating intuitive and
+              engaging digital products that solve real user problems and
+              deliver meaningful experiences.{" "}
+            </p>
           </motion.div>
 
-          <div className="grid md:grid-cols-2 gap-12 items-center">
+          <div className="flex justify-center items-center">
             <motion.div
               initial={{ opacity: 0, x: -30 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ delay: 0.2 }}
-              className="space-y-6"
+              className="space-y-6 max-w-2xl text-center"
             >
-              <h2 className="text-3xl md:text-4xl font-black uppercase">Turning Vision Into Reality</h2>
+              <h2 className="text-3xl md:text-4xl font-black uppercase">
+                Turning Vision Into Reality
+              </h2>
               <p className="text-black/70 leading-relaxed">
-With 2+ years of experience in UI/UX design, I’ve worked across financial AI platforms, e-commerce, and food delivery products, transforming complex ideas into user-friendly interfaces and seamless digital journeys. I actively leverage AI-powered design tools to accelerate workflows, enhance creativity, and deliver efficient, high-quality solutions. My understanding of front-end development helps bridge the gap between design and implementation, ensuring practical and scalable outcomes.</p>              <p className="text-black/70 leading-relaxed">
-                My approach combines creativity with strategy, ensuring that every project not only looks beautiful but also achieves its business goals.
+                With 2+ years of experience in UI/UX design, I've worked across
+                financial AI platforms, e-commerce, and food delivery products,
+                transforming complex ideas into user-friendly interfaces and
+                seamless digital journeys. I actively leverage AI-powered design
+                tools to accelerate workflows, enhance creativity, and deliver
+                efficient, high-quality solutions. My understanding of front-end
+                development helps bridge the gap between design and
+                implementation, ensuring practical and scalable outcomes.
+              </p>
+              <p className="text-black/70 leading-relaxed">
+                My approach combines creativity with strategy, ensuring that
+                every project not only looks beautiful but also achieves its
+                business goals.
               </p>
             </motion.div>
 
-            <motion.div
-              initial={{ opacity: 0, x: 30 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ delay: 0.3 }}
-              className="grid grid-cols-3 gap-4"
-            >
-              {achievements.map((achievement, index) => (
-                <motion.div
-                  key={index}
-                  whileHover={{ scale: 1.05 }}
-                  className="bg-white p-6 rounded-2xl shadow-lg text-center"
-                >
-                  <div className="text-orange-500 mb-3 flex justify-center">{achievement.icon}</div>
-                  <div className="text-3xl font-black mb-1">{achievement.number}</div>
-                  <div className="text-xs text-black/60">{achievement.label}</div>
-                </motion.div>
-              ))}
-            </motion.div>
+            {/* <motion.div
+    initial={{ opacity: 0, x: 30 }}
+    animate={{ opacity: 1, x: 0 }}
+    transition={{ delay: 0.3 }}
+    className="grid grid-cols-3 gap-4"
+  >
+    {achievements.map((achievement, index) => (
+      <motion.div
+        key={index}
+        whileHover={{ scale: 1.05 }}
+        className="bg-white p-6 rounded-2xl shadow-lg text-center"
+      >
+        <div className="text-orange-500 mb-3 flex justify-center">{achievement.icon}</div>
+        <div className="text-3xl font-black mb-1">{achievement.number}</div>
+        <div className="text-xs text-black/60">{achievement.label}</div>
+      </motion.div>
+    ))}
+  </motion.div> */}
           </div>
         </div>
       </section>
@@ -138,7 +175,7 @@ With 2+ years of experience in UI/UX design, I’ve worked across financial AI p
           >
             I Can Help You With
           </motion.h2>
-          
+
           <div className="grid md:grid-cols-3 gap-8">
             {services.map((service, index) => (
               <motion.div
@@ -150,12 +187,16 @@ With 2+ years of experience in UI/UX design, I’ve worked across financial AI p
                 whileHover={{ y: -10 }}
                 className="bg-gradient-to-br from-orange-50 to-pink-50 p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow"
               >
-                <div className="text-6xl font-light text-orange-500/20 mb-4">{service.number}</div>
+                <div className="text-6xl font-light text-orange-500/20 mb-4">
+                  {service.number}
+                </div>
                 <div className="flex items-center gap-3 mb-4">
                   <div className="text-orange-500">{service.icon}</div>
                   <h3 className="font-black text-xl">{service.title}</h3>
                 </div>
-                <p className="text-sm text-black/60 leading-relaxed">{service.description}</p>
+                <p className="text-sm text-black/60 leading-relaxed">
+                  {service.description}
+                </p>
               </motion.div>
             ))}
           </div>
@@ -173,7 +214,7 @@ With 2+ years of experience in UI/UX design, I’ve worked across financial AI p
           >
             Experience
           </motion.h2>
-          
+
           <div className="space-y-6">
             {skills.map((skill, index) => (
               <motion.div
@@ -184,18 +225,28 @@ With 2+ years of experience in UI/UX design, I’ve worked across financial AI p
                 transition={{ delay: index * 0.1 }}
                 className="bg-white p-6 rounded-2xl shadow-md hover:shadow-lg transition-shadow"
               >
-                <div className="flex flex-col md:flex-row md:items-center gap-7
-                ">
-                  <div className="text-sm text-orange-500 font-semibold md:w-100%">{skill.year}</div>
-                  <div className="font-black md:w-48 text-xl">{skill.category}</div>
+                <div
+                  className="flex flex-col md:flex-row md:items-center gap-7
+                "
+                >
+                  <div className="text-sm text-orange-500 font-semibold md:w-100%">
+                    {skill.year}
+                  </div>
+                  <div className="font-black md:w-48 text-xl">
+                    {skill.category}
+                  </div>
                   <div className="flex flex-wrap gap-3 flex-1">
-                    {/* {skill.items.map((item, i) => (
+                    {
+                      /* {skill.items.map((item, i) => (
                       <span key={i} className="bg-gradient-to-r from-orange-100 to-pink-100 px-4 py-2 rounded-full text-sm font-medium">
                         {item}
                       </span>
                     ))} */
-                    
-                    <div className="text-sm text-gray-500 font-regular md:w-100%">{skill.description}</div>}
+
+                      <div className="text-sm text-gray-500 font-regular md:w-100%">
+                        {skill.description}
+                      </div>
+                    }
                   </div>
                 </div>
               </motion.div>

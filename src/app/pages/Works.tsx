@@ -5,7 +5,7 @@ import { ExternalLink, Link } from 'lucide-react';
 import bezAI from "../../Accets/FVS.png";
 import zedcasa from "../../Accets/ZEDCASA.png";
 import foodDelivery from "../../Accets/Tracking.png";
-import Todo from "../../Accets/Todo.png";
+import To_do from "../../Accets/Todo.png";
 import shareNest from "../../Accets/Sharenest.png";
 
 export function Works() {
@@ -44,7 +44,7 @@ export function Works() {
     },
     {
       id: 4,
-      image: Todo,
+      image: To_do,
       title: "Learn Loop",
       category: "Concept Project",
       description: "Concept application design for learning-based task management.",

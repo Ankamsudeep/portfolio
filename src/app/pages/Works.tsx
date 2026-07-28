@@ -4,7 +4,8 @@ import { ExternalLink, Link } from 'lucide-react';
 
 import bezAI from "../../Accets/FVS.png";
 import zedcasa from "../../Accets/ZEDCASA.png";
-import foodDelivery from "../../Accets/Food delivery.png";
+import foodDelivery from "../../Accets/Tracking.png";
+import Todo from "../../Accets/Todo.png";
 import shareNest from "../../Accets/Sharenest.png";
 
 export function Works() {
@@ -21,6 +22,7 @@ export function Works() {
       category: "AI Product Design",
       description: "Complete UI/UX design for an AI-powered financial platform.",
       color: "from-purple-500 to-blue-500",
+      link: "https://app.notion.com/p/Designing-User-Experiences-for-an-AI-Powered-Finance-Platform-385e4ac69ddd8084a8eddc17e5a264c1?source=copy_link",
     },
     {
       id: 2,
@@ -29,18 +31,29 @@ export function Works() {
       category: "Web & Mobile Design",
       description: "Designed furniture e-commerce website and mobile app experience.",
       color: "from-orange-500 to-pink-500",
-      Link: "https://www.zedcasa.com/"
+      link: "https://app.notion.com/p/Designing-a-Seamless-Furniture-E-Commerce-Experience-385e4ac69ddd80f1844ed9ed2fca9aea?source=copy_link",
     },
     {
       id: 3,
       image: foodDelivery,
-      title: "Food Delivery Website",
-      category: "UI Design",
-      description: "Modern food delivery website with clean and intuitive UI.",
+      title: "VendorTrack - Daily Delivery Management Platform",
+      category: "Concept Project",
+      description: "Concept platform design for managing daily vendor deliveries.",
       color: "from-green-500 to-teal-500",
+      link: "https://app.notion.com/p/VendorTrack-Daily-Delivery-Management-Platform-Concept-Project-3abe4ac69ddd800db1eeca76a2849566?source=copy_link",
     },
     {
       id: 4,
+      image: Todo,
+      title: "Learn Loop",
+      category: "Concept Project",
+      description: "Concept application design for learning-based task management.",
+      color: "from-blue-500 to-indigo-500",
+      link: "https://app.notion.com/p/Smart-To-Do-Learning-Task-Management-Application-Concept-Project-3abe4ac69ddd805aa390cfbe5e373ad9?source=copy_link",
+    },
+    {
+      
+      id: 5,
       image: shareNest,
       title: "ShareNest Platform",
       category: "Landing Page & Research",
@@ -49,8 +62,9 @@ export function Works() {
       link: "https://www.behance.net/gallery/220406483/Sharenest",
     },
 
+
     // {
-    //   id: 5,
+    //   id: 6,
     //   // image: "https://images.unsplash.com/photo-1729257753395-7e6406776fa2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzdW5zZXQlMjBncmFkaWVudCUyMGFic3RyYWN0fGVufDF8fHx8MTc3MTk1MjU3NXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
     //   title: "Fitness Tracking App",
     //   category: "ui/ux",
@@ -58,7 +72,7 @@ export function Works() {
     //   color: "from-yellow-500 to-orange-500"
     // },
     // {
-    //   id: 6,
+    //   id: 7,
     //   image: "https://images.unsplash.com/photo-1707836868495-3307d371aba4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2JpbGUlMjBhcHAlMjBkZXNpZ24lMjBtb2NrdXB8ZW58MXx8fHwxNzcxODkwODAwfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
     //   title: "Social Media Platform",
     //   category: "mobile app",
@@ -125,7 +139,7 @@ export function Works() {
                 exit={{ opacity: 0, scale: 0.8 }}
                 transition={{ delay: index * 0.05 }}
                 className="group cursor-pointer"
-                onClick={() => window.open(project.link, "_blank")}
+                onClick={() => project.link && window.open(project.link, "_blank")}
               >
                 
 
